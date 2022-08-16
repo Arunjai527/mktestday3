@@ -1,0 +1,172 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="./pro.css"/>
+   
+  </head>
+  <body bgcolor="#FFDAB9">
+    <h1>Difference between flex row and column?</h1>
+    <h2>flex row</h2>
+    <p>flex row is a default where the  boxes are in the container is set to be in row<br>
+        eg:flex direction:row or row-reverse(items are in reverse)
+    </p>
+    <h2>flex coloumn</h2>
+    <p>coloumn is not a default in which the flexs are in column<br>
+        eg:flex direction:coloumn or coloumn-reverse
+    </p>
+    <h1>Explain inline , internal and external stylesheet?</h1>
+    <h2>inline</h2>
+    <p>style you have to set up any value like color or backgroung color</p><br>
+    eg:<p style="color:green">arun</p>
+    <h2>internal</h2>
+        <p>internal css we have to write inside an head tag wherever you want<br>
+            Internal or embedded CSS requires you to add style tag in the head</p>
+            <h2>external</h2>
+            <p>css have many attributes<br>
+            external should use in .css files
+            we can use many like color,bgcolor,width,padding,border,,,,
+            </p>
+            <h1>Justify-content allows you to do what?</h1>
+            <p>it creates direction of flexes or grids
+                eg: justify-content: flex-end;<br>
+                justify-content:flex-start;<br>
+                justify-content:center;<br>
+                justify-content:space-between;<br>
+                justify-content:space-around;<br>
+            </p>
+            <h1></h1>
+            <p>Make a 4 columns grid container, and specify a size for each column<br>
+ 
+                    <!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30px 200px auto 100px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-template-columns Property?</h1>
+
+<p>Use the <em>grid-template-columns</em> property to define the size (width) of each column in the grid layout.</p>
+<p>This grid layout has four columns, with four different sizes:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+</div>
+
+</body>
+</html>
+            </p>
+<h1>What is the difference between padding and margin?</h1>
+<h2>Margin</h2>
+Margin is said to be the outer space of an element, i.e., the margin is the space outside of the element's border.<br>
+We can set the margin to auto.<br>
+It can be negative or any float number.<br>
+Styling of an element such as background color does not affect the margin.
+<h2>Padding</h2>
+<p>Padding is said to be the inner space of an element, i.e., the padding is the space inside of the element's border.<br>
+We cannot set the padding to auto.<br>
+ It does not allow negative values.<br>
+Padding is affected by the styling of an element, such as background color.
+<img  src="margin-padding.png">
+</p>
+<h1>What is the z-index in CSS?</h1>  
+<p>When elements are positioned, they can overlap other elements.<br>
+
+    The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).<br>
+    
+    An element can have a positive or negative stack order
+    z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+</p>
+<h1>What is animation delay?</h1>
+<p>CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation.<br>
+eg:animation delay:4s;
+</p>
+<h1>Which property you will use to merge cells vertically in grid?</h1>
+<p>The vertical lines of grid items are called columns.<br>
+
+</p>
+<h1>Explain CSS box model ?</h1>
+<h2>there are mainly 5 types</h2>
+<ul>
+    <li>Margin</li>
+    <li>Border</li>
+    <li>Padding</li>
+    <li>Content</li>
+    <li>Height and Width</li>
+    
+</ul>
+<h1>Margin</h1>
+<p>On the CSS Box Model, the margin is the section in the exterior. This edge extends around the box model taking the empty space between the margin and border properties. You can consider this a buffer area that separates the interior of the CSS box model from other HTML elements on a page.</p>
+<br>
+ <h1>The Border</h1> 
+ <p>we have many types of border</p>
+ eg:border:10px solid red;
+ border Radius;
+ <h1>padding</h1>
+ eg:div {
+    padding: 40px;
+    border-style: solid;
+    border-color: blue;
+      }
+<h1>Content</h1>
+<p>whatever we write on text we add images is a content <br>
+we have another boxes types like
+box shadow
+text shadow applying their
+</p>
+<h1>height and width</h1>
+<p> with the help of these we can apply each and everything</p>
+eg:heigth:200px;<br>
+width:200px;
+<h1>what is the difference between display none and visibility hidden?</h1>
+<h2>display none</h2>
+<p>it will not display any element</p>
+<h2>visibility hidden</h2>
+<p>it is used to specify wheather property is vivible or not in a web development</p>
+<h1>Which property you will use to merge cells vertically in grid?</h1>
+<div class="grid-container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+</div>
+
+<h1>Which property you will use to merge cells horizontally in grid?</h1>
+eg:
+.grid-container2
+{
+    display: grid;<br>
+     grid-template-rows: 200px;<br>
+     box sizzling:border-box;<br>
+
+     
+}
+
+
